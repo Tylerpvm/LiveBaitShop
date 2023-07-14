@@ -4,3 +4,26 @@
 */
 
 /* header section */
+.h-container {
+    text-align: center;
+    background-color: rebeccapurple;
+    background-size: cover;
+}
+
+.h-container img {
+    width: 60%;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.b-bottom-container {
+    text-align: center;
+}
+
+table td {
+    border: 1px solid black;
+}
+
+td {
+    padding: 10px;
+}
