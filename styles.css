@@ -51,7 +51,7 @@ footer {
 }
 
 /* navigation */
-nav ul{
+.main-nav ul{
     display: grid;
     grid-gap: 20px;
     list-style: none;
@@ -60,16 +60,17 @@ nav ul{
     text-align: center;
 }
 
-nav a{
+.main-nav a{
     background-color: var(--back-dark);
     color: var(--back-light);
+    display: block;
     border-radius: .25rem;
     padding: 0.5rem 1.2rem;
     text-decoration: none;
     box-shadow: var(--shadow);
 }
 
-nav a:hover {
+.main-nav a:hover {
     padding: 0.6rem 1.3rem;
 }
 
@@ -105,12 +106,12 @@ nav a:hover {
 .mid-container {
     display: grid;
     grid-gap: 40px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     margin: 30px 50px;
 }
 
 .mid-container .box-a{
-    background: url("img/shop-bait.jpg");
+    background: url("img/home-img/shop-bait.jpg");
     background-size: cover;
     padding: 80px;
     text-align: center;
@@ -120,7 +121,7 @@ nav a:hover {
 }
 
 .mid-container .box-b {
-    background: url("img/shop-tackle.jpg");
+    background: url("img/home-img/shop-tackle.jpg");
     background-size: cover;
     padding: 80px;
     text-align: center;
@@ -130,7 +131,7 @@ nav a:hover {
 }
 
 .mid-container .box-c {
-    background: url("img/fire-wood.jpg");
+    background: url("img/home-img/fire-wood.jpg");
     background-size: cover;
     padding: 80px;
     text-align: center;
@@ -153,20 +154,49 @@ nav a:hover {
     box-shadow: var(--shadow);
 }
 
+/* vid container */
+.vid-container {
+    background-color: var(--back-light);
+    text-align: center;
+    display: grid;
+    grid-gap: 6rem;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem;
+    margin-bottom: 40px;
+    border-radius: .25rem;
+    box-shadow: var(--shadow);
+}
+
+.vid-container .box {
+    background-color: var(--back-dark);
+    color: var(--back-light);
+    border-radius: .25rem;
+    box-shadow: var(--shadow);
+    padding: 10px;
+}
+
+.vid-container .box a {
+    display: none;
+}
+
 /* bottom container */
 .bottom-container {
     background-color: var(--back-light);
     display: grid;
-    grid-gap: 500px;
+    grid-gap: 40px;
     grid-template-columns: 1fr 1fr;
     padding: 3rem;
-    margin: 50px;
+    margin-bottom: 30px;
     border-radius: .25rem;
     box-shadow: var(--shadow);
 }
 
 .location {
     text-align: center;
+}
+
+.location a {
+    display: none;
 }
 
 .fa-brands {
@@ -183,7 +213,7 @@ nav a:hover {
     text-align: center;
     display: grid;
     grid-gap: 40px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     padding: 10px;
 }
 
@@ -209,7 +239,7 @@ nav a:hover {
     text-align: center;
     display: grid;
     grid-gap: 40px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     padding: 10px;
 }
 
@@ -233,11 +263,12 @@ nav a:hover {
 
 table {
     margin: 20px 40px 20px 0px;
-    background: url(img/iStock-943355988-scaled.jpg);
+    background: url(img/baits-img/cat-fish.jpg);
     background-size: cover;
     border-radius: .25rem;
     box-shadow: var(--shadow);
     border-collapse: collapse;
+    width: 100%;
 }
 
 table td {
@@ -265,7 +296,7 @@ table p {
     text-align: center;
     display: grid;
     grid-gap: 40px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     padding: 10px;
 }
 
@@ -291,7 +322,7 @@ table p {
     text-align: center;
     display: grid;
     grid-gap: 40px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     padding: 10px;
 }
 
@@ -312,7 +343,7 @@ table p {
     text-align: center;
     display: grid;
     grid-gap: 40px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     padding: 10px;
     margin-bottom: 20px;
 }
@@ -374,16 +405,17 @@ table p {
 /* bottom container */
 .s-bottom-container {
     display: grid;
-    grid-gap: 25px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
     background-color: var(--back-light);
     border-radius: .25rem;
     box-shadow: var(--shadow);
-    padding: 25px;
+    padding: 25px 0 25px 50px;
     margin-bottom: 20px;
 }
 
 .s-bottom-container img {
+    margin: auto;
     border-radius: .25rem;
     box-shadow: var(--shadow);
 }
