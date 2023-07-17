@@ -43,7 +43,7 @@
 
 }
 
-@media(max-width: 758px) {
+@media(max-width: 778px) {
    .main-nav ul {
       grid-template-columns: 1fr;
    }
