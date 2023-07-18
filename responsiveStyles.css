@@ -3,7 +3,7 @@
    Assignment: Live Bait Website
 */
 
-@media(max-width: 1260px) {
+@media(max-width: 1335px) {
    .vid-container {
       grid-template-columns: 1fr;
    }
@@ -60,7 +60,7 @@
    }
 
    .s-top-container header {
-      grid-area: header header;
+      grid-area: header;
    }
 
    .s-top-container .s-box-a {
